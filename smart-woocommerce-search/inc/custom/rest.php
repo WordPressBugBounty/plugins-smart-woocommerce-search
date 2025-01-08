@@ -44,6 +44,7 @@ function handle_request( \WP_REST_Request $request ) {
 	$res = [
 		'suggestions'   => [],
 		'view_all_link' => '',
+		'keywords' => []
 	];
 
 	if ( ! $query ) {

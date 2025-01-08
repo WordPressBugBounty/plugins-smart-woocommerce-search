@@ -2,7 +2,7 @@
 function ysm_add_inline_styles_to_stack( $v, $css_classes ) {
 
 	foreach ( $css_classes as $css_class ) {
-		$css_class = trim( $css_class ) . '.ysm-active';
+		$css_class = trim( $css_class );
 
 		/* input styles */
 
@@ -65,6 +65,9 @@ function ysm_add_inline_styles_to_stack( $v, $css_classes ) {
 			Ysm_Style_Generator::add_rule( $css_class, array(
 				'selectors' => array(
 					'.search-submit',
+                    '.ssf-search-icon-search',
+                    '.sws-search-recent-list-item-trigger:hover',
+                    '.sws-search-recent-list-item-delete:hover',
 				),
 				'props'     => array(
 					'color' => $v['settings']['input_icon_color'],

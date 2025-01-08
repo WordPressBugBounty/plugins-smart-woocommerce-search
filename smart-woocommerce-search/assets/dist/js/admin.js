@@ -7,17 +7,34 @@
 		/**
 		 * Widget settings tabs
 		 */
-		$( '#ymapp-settings__nav > .nav-tab' ).on( 'click', function() {
+		$( '.js-sws-nav-sidebar-item' ).on( 'click', function() {
 			var id = $( this ).data( 'href' ),
-				holder = $( this ).parent( '.nav-tab-wrapper' );
+				holder = $('.sws_nav_sidebar');
 
 			if ( ! $( this ).hasClass( 'nav-tab-active' ) ) {
-				holder.find( '.nav-tab' ).removeClass( 'nav-tab-active' );
+				holder.find( '.js-sws-nav-sidebar-item' ).removeClass( 'nav-tab-active' );
 				$( this ).addClass( 'nav-tab-active' );
 				holder.parent().find( '.ymapp-settings__content' ).hide();
+
 				$( id ).fadeIn();
 				location.hash = id.replace( '_tab', '_tab_active' ).replace( '#', '' );
 			}
+
+			return false;
+		} );
+
+		$( '.js-sws-tab-mobile-heading' ).on( 'click', function() {
+			// Close all sections except the clicked one
+			var id = $( this ).data( 'href' );
+			$('.js-sws-tab-mobile-heading').removeClass('sws_tab_mobile_heading--active');
+
+			// Toggle the clicked section
+			$(this).next('.sws_tab_content').slideToggle();
+
+			if ($(this).next('.sws_tab_content').is(':visible')) {
+				$(this).addClass('sws_tab_mobile_heading--active');
+			}
+			location.hash = id.replace( '_tab', '_tab_active' ).replace( '#', '' );
 
 			return false;
 		} );
@@ -154,9 +171,18 @@
 		 */
 		if ( location.hash.match(/_tab_active/) ) {
 			var hash = location.hash.replace( '_tab_active', '_tab' ).replace( '#', '' ),
-				currentTab = $( '#ymapp-settings__nav > .nav-tab[data-href="#' + hash + '"]' );
+				currentTab = $( '.js-sws-nav-sidebar-item[data-href="#' + hash + '"]' ),
+				currentTabMobile = $( '.js-sws-tab-mobile-heading[data-href="#' + hash + '"]' );
 			if ( currentTab.length && ! currentTab.hasClass( 'nav-tab-active' ) ) {
 				currentTab.trigger( 'click' );
+			}
+
+
+			if ($(window).width() <= 960 && currentTabMobile.length && ! currentTabMobile.hasClass( 'sws_tab_mobile_heading--active' ) ) {
+				$('.sws_tab_content').hide();
+
+				console.log(currentTabMobile.next('.sws_tab_content'))
+				currentTabMobile.trigger( 'click' );
 			}
 		}
 
