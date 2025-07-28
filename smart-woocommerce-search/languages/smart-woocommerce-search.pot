@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Smart WooCommerce Search plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Smart WooCommerce Search 2.15.0\n"
+"Project-Id-Version: Smart WooCommerce Search 2.15.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/smart-woocommerce-search\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-07-01T19:15:27+00:00\n"
+"POT-Creation-Date: 2025-07-28T09:31:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: smart-woocommerce-search\n"
@@ -35,47 +35,51 @@ msgstr ""
 msgid "YummyWP"
 msgstr ""
 
-#: inc/admin/admin.php:38
+#: inc/admin/admin.php:36
 msgid "Search Widgets"
 msgstr ""
 
-#: inc/admin/admin.php:39
+#: inc/admin/admin.php:37
 msgid "Widgets"
 msgstr ""
 
-#: inc/admin/admin.php:46
+#: inc/admin/admin.php:43
 msgid "Add New Search Widget"
 msgstr ""
 
-#: inc/admin/admin.php:47
+#: inc/admin/admin.php:44
 #: templates/admin-page-widgets.php:108
 msgid "Add New"
 msgstr ""
 
-#: inc/admin/admin.php:54
-#: inc/admin/admin.php:55
+#: inc/admin/admin.php:50
+#: inc/admin/admin.php:51
 #: templates/admin-page-index-status.php:32
 msgid "Index Status"
 msgstr ""
 
-#: inc/admin/admin.php:62
-#: inc/admin/admin.php:63
+#: inc/admin/admin.php:57
+#: inc/admin/admin.php:58
 msgid "Synonyms"
 msgstr ""
 
-#: inc/admin/admin.php:70
-#: inc/admin/admin.php:71
+#: inc/admin/admin.php:64
+#: inc/admin/admin.php:65
 msgid "Stop Words"
 msgstr ""
 
-#: inc/admin/admin.php:104
+#: inc/admin/admin.php:98
 #: templates/admin-page-form.php:58
 msgid "Settings"
 msgstr ""
 
 #. translators: %s: Name/id of a widget
-#: inc/admin/admin.php:121
+#: inc/admin/admin.php:116
 msgid "Edit Widget: %s"
+msgstr ""
+
+#: inc/app/class-field.php:291
+msgid "No image selected"
 msgstr ""
 
 #: inc/app/class-field.php:315
@@ -253,7 +257,7 @@ msgstr ""
 #: templates/admin-page-synonyms.php:69
 #: templates/admin-tab-fields.php:227
 #: templates/admin-tab-fullscreen.php:164
-#: templates/admin-tab-general.php:278
+#: templates/admin-tab-general.php:270
 #: templates/admin-tab-layout.php:158
 #: templates/admin-tab-styling.php:235
 msgid "Documentation"
@@ -725,79 +729,71 @@ msgstr ""
 msgid "Only variations"
 msgstr ""
 
-#: templates/admin-tab-general.php:198
-msgid "Skip Punctuation"
-msgstr ""
-
-#: templates/admin-tab-general.php:199
-msgid "Skip punctuation in the search query"
-msgstr ""
-
-#: templates/admin-tab-general.php:205
+#: templates/admin-tab-general.php:197
 msgid "Search Results Page"
 msgstr ""
 
-#: templates/admin-tab-general.php:210
+#: templates/admin-tab-general.php:202
 msgid "Disable Redirect to Product Page"
 msgstr ""
 
-#: templates/admin-tab-general.php:211
+#: templates/admin-tab-general.php:203
 msgid "Prevent WooCommerce from automatically redirecting to a product page when there is only one search result."
 msgstr ""
 
-#: templates/admin-tab-general.php:217
+#: templates/admin-tab-general.php:209
 msgid "Suppress Database Query Altering"
 msgstr ""
 
-#: templates/admin-tab-general.php:218
+#: templates/admin-tab-general.php:210
 msgid "Prevent the theme or plugins from modifying the database query on the search results page"
 msgstr ""
 
-#: templates/admin-tab-general.php:224
+#: templates/admin-tab-general.php:216
 msgid "Disable Smart Search Feature on the Search Results Page"
 msgstr ""
 
-#: templates/admin-tab-general.php:225
+#: templates/admin-tab-general.php:217
 msgid "Disable altering search results by Smart Search plugin on the search results page.<br>By default the plugin modified search results according to selected options"
 msgstr ""
 
-#: templates/admin-tab-general.php:231
+#: templates/admin-tab-general.php:223
 msgid "Disable WooCommerce Template on the Search Results Page"
 msgstr ""
 
-#: templates/admin-tab-general.php:232
+#: templates/admin-tab-general.php:224
 msgid "Displays the default search results template defined in the theme instead of WooCommerce template.<br>Useful if you want to display posts with products together"
 msgstr ""
 
-#: templates/admin-tab-general.php:238
+#: templates/admin-tab-general.php:230
 msgid "Highlight Search Terms on the Search Results Page"
 msgstr ""
 
-#: templates/admin-tab-general.php:239
+#: templates/admin-tab-general.php:231
 msgid "Highlight words that match a search query on the search results page. Works only if the Smart Search Feature is not disabled on the search results page"
 msgstr ""
 
-#: templates/admin-tab-general.php:244
+#: templates/admin-tab-general.php:236
 msgid "Advanced"
 msgstr ""
 
-#: templates/admin-tab-general.php:250
+#: templates/admin-tab-general.php:242
 msgid "It may be helpful if you changed the base slug for WooCommerce products. The base slug is \"product\""
 msgstr ""
 
-#: templates/admin-tab-general.php:260
+#: templates/admin-tab-general.php:252
 msgid "To enhance existing search bar with the Smart Search features."
 msgstr ""
 
-#: templates/admin-tab-general.php:261
+#: templates/admin-tab-general.php:253
 msgid "Add a CSS selector (id or class) of the search bar's form element."
 msgstr ""
 
-#: templates/admin-tab-general.php:262
+#: templates/admin-tab-general.php:254
 msgid "Fill in each selector on a new line."
 msgstr ""
 
-#: templates/admin-tab-general.php:272
+#: templates/admin-tab-general.php:264
 msgid "Add extra CSS styles"
 msgstr ""
 
