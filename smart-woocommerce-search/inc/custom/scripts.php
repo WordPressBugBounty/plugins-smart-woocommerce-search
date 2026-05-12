@@ -25,6 +25,7 @@ function front_scripts() {
             'enabledEvents' => (array) get_option( 'sws_ga_enabled_events', [] ),
         ],
         'nonce'         => wp_create_nonce( 'wp_rest' ),
+        'indexStatus'   => \YSWS\Core\DB_Index\get_index_status(),
         'widgets'       => [],
     ];
     if ( defined( 'POLYLANG_BASENAME' ) ) {
