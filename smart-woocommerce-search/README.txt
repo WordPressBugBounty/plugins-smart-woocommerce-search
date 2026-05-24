@@ -1,7 +1,7 @@
 === Sokol: Smart WooCommerce Search ===
 Contributors: yummy-wp
 Tags: search, ajax search, product search, search by sku, woocommerce search
-Stable tag: 3.0.5
+Stable tag: 3.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 5.9
@@ -19,6 +19,8 @@ Boost WooCommerce sales with instant Ajax product search — live suggestions, f
 WooCommerce's default search loses you sales. **Smart WooCommerce Search** replaces it with a fast, intelligent Ajax search that shows real-time product suggestions — with images, prices, and categories — before your customer even finishes typing.
 
 Improve the default **WooCommerce search** or create a fully custom search widget in a few steps. The **Smart Search** plugin delivers real-time suggestions in a beautiful fullscreen popup with support for synonyms and recent searches — seamlessly integrated into any theme or page builder.
+
+Smart falcon search pre-builds a dedicated search index for blazing-fast results on large catalogs. Sub-100ms search response even with 100,000+ products.
 
 = Free Features: =
 
@@ -66,15 +68,16 @@ Discover all PRO features with a **14-day free trial** — no risk, cancel anyti
 * Ultimate WooCommerce Brands plugin compatibility
 * Automatic plugin updates
 * More customization and styling settings
+* SKU search/ EAN search
 
 Have questions? [Contact us](https://www.wpsmartsearch.com/contact/).
 
 == Installation ==
 
 1. Unzip the downloaded .zip file.
-2. Upload the plugin folder to the `wp-content/plugins/` directory of your WordPress site.
+2. Upload the **Smart Search** plugin folder to the `wp-content/plugins/` directory of your WordPress site.
 3. Go to **Plugins** in your WordPress dashboard and activate **Sokol: Smart WooCommerce Search**.
-4. Configure the plugin at `/wp-admin/admin.php?page=smart-search`.
+4. Configure the falcon plugin at `/wp-admin/admin.php?page=smart-search`.
 5. Place the search shortcode `<?php echo do_shortcode('[smart_search id="1"]'); ?>` into your theme template, or use the built-in widget.
 
 == Frequently Asked Questions ==
@@ -87,7 +90,7 @@ The example uses widget ID = 1. Make sure to change the ID to match the widget y
 
 = Is it compatible with my WordPress theme? =
 
-The plugin integrates cleanly into virtually any theme. It may require minor CSS tweaks to match your exact design, but it works out of the box with all major themes and page builders (Elementor, DIVI, WPBakery, Visual Composer, Avada).
+The falcon plugin integrates cleanly into virtually any theme. It may require minor CSS tweaks to match your exact design, but it works out of the box with all major themes and page builders (Elementor, DIVI, WPBakery, Visual Composer, Avada).
 
 = How do I manage the plugin settings? =
 
@@ -99,13 +102,29 @@ Yes. When searching through products — either via the default widget or a cust
 
 = Does it work with WPML or Polylang for multilingual stores? =
 
-Multilingual support (WPML and Polylang) is available in the PRO version.
+Multilingual support (WPML and Polylang) is available.
 
 = Is there a free trial for PRO? =
 
 Yes — you can try all PRO features free for 14 days. Start your trial from the plugin settings page inside your WordPress dashboard.
 
+== Screenshots ==
+
+1. Latest Searches
+2. Smart Search PRO - Grid layout
+3. Smart Search PRO - Did you mean / Synonyms
+4. Fullscreen Popup
+5. Smart Search PRO - Product options
+
 == Changelog ==
+
+= 3.0.8 =
+* Fixed: recent searches styling issue when search popup opened from website's menu
+* Updated: translations
+
+= 3.0.7 =
+* Added: option "Display only Search Icon" - hides input field and shows only search button
+* Added: ability to add "Sokol Smart Search" widget into menu
 
 = 3.0.6 =
 * Fixed: issue when user can't click on the founded results in the inline widget
